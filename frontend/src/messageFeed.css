@@ -1,0 +1,32 @@
+.messageFeed {
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  max-height: 400px;
+  border: 1px solid #000;
+}
+
+.messageFeed ul,
+.messageFeed li {
+  width: 100%;
+}
+
+.messageFeed ul {
+  overflow: auto;
+  padding: 1rem;
+}
+
+.messageFeed li {
+  border-bottom: 1px dashed rgb(98, 98, 98);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.noMessages,
+.loading {
+  align-self: center;
+}
+
+.loading {
+  color: #27a32d;
+}
