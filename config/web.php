@@ -51,14 +51,17 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                "POST messages" => "message/add-message",
+                "GET messages" => "message/get-messages",
+                "OPTIONS messages" => "message/options"
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
