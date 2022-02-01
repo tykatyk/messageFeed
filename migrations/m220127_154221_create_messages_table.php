@@ -16,7 +16,7 @@ class m220127_154221_create_messages_table extends Migration
             'id' => $this->primaryKey(),
             'header' => $this->string()->notNull(),
             'content' => $this->string()->notNull(),
-            'created_at' => $this->dateTime(),
+            'created_at' => $this->dateTime()->notNull(),
         ]);
     }
 
