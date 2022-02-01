@@ -19,6 +19,17 @@ class Helper
 
         return $lastMinute;
     }
+
+    
+    public static function prepareQuery(string $sortingOrder, string $filter) : string
+    {
+        $sorting = self::prepareSorting($sortingOrder);
+        $filtering = self::prepareFiltering($filter);
+
+        $query = "SELECT * FROM messages ".$filtering." ".$sorting;
+        return $query;        
+    }
+
     public static function prepareSorting($sortingOrder): string
     {
         $sortBy = "";
