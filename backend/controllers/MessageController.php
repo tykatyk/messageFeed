@@ -33,6 +33,7 @@ class MessageController extends Controller
             'cors' => [
                 'Origin' => ['*'],
                 'Access-Control-Request-Method' => ['GET', "POST", "OPTIONS"],
+                'Access-Control-Allow-Headers' => ['*'],
                 'Access-Control-Max-Age' => 3600,
             ],
         ];
