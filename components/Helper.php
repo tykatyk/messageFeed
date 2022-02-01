@@ -37,4 +37,17 @@ class Helper
 
         return $sortBy;
     }
+
+
+    public static function prepareFiltering($filter) : string
+    {
+        $filtering = "";
+
+        if($filter == "lastMinute"){
+            $lastMinute = self::getLastMinute();
+            $filtering = "WHERE created_at >= '".$lastMinute["start"]."' AND created_at <= '".$lastMinute["end"]."'";
+        }
+        
+        return $filtering;
+    }
 }
