@@ -36,10 +36,12 @@ class Helper
 
         if($sortingOrder == "asc"){
             $sortBy .= "ORDER BY created_at ASC";
+            return $sortBy;
         }
 
         if($sortingOrder == "desc"){
             $sortBy .= "ORDER BY created_at DESC";
+            return $sortBy;
         }
 
         if($sortingOrder == "random"){
