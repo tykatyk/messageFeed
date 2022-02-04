@@ -13,7 +13,7 @@ export default function App() {
   const [getMessageError, setGetMessageError] = React.useState(null);
   const [addMessageError, setAddMessageError] = React.useState(null);
   const [viewMode, setViewMode] = React.useState({
-    sort: "asc",
+    sort: "desc",
     filter: "all",
   });
   const [selectedRadio, setSelectedRadio] = React.useState("allDesc");
