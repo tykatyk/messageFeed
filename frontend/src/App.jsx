@@ -66,6 +66,7 @@ export default function App() {
         sort: "random",
         filter: "all",
       });
+      return;
     }
 
     if (mode === "allDesc") {
@@ -73,6 +74,7 @@ export default function App() {
         sort: "desc",
         filter: "all",
       });
+      return;
     }
 
     if (mode === "lastMinute") {
@@ -81,6 +83,7 @@ export default function App() {
         filter: "lastMinute",
       });
     }
+    return;
   };
 
   const updateMessages = (viewMode) => {
